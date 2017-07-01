@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,13 +28,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nCQ-si-nb6">
+                                <rect key="frame" x="116" y="114" width="143" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nE8-bO-fgX">
+                                <rect key="frame" x="116" y="164" width="143" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR8-Bo-fVf">
+                                <rect key="frame" x="160" y="214" width="55" height="30"/>
+                                <state key="normal" title="Turn Up"/>
+                                <connections>
+                                    <action selector="turnUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3L0-GA-5d1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nE8-bO-fgX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0zp-fC-szr"/>
                             <constraint firstItem="bek-ux-cHr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="38m-Pt-TV0"/>
+                            <constraint firstItem="nCQ-si-nb6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5ki-cG-Z3J"/>
+                            <constraint firstItem="nE8-bO-fgX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Js-Z7-JjX"/>
                             <constraint firstItem="bek-ux-cHr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ADM-YD-Cxg"/>
+                            <constraint firstItem="kR8-Bo-fVf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HOk-W6-8vu"/>
+                            <constraint firstItem="nE8-bO-fgX" firstAttribute="top" secondItem="nCQ-si-nb6" secondAttribute="bottom" constant="20" id="UD4-kS-gRf"/>
+                            <constraint firstItem="kR8-Bo-fVf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WfX-hv-a3g"/>
+                            <constraint firstItem="nE8-bO-fgX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="bVm-c4-1vn"/>
+                            <constraint firstItem="nCQ-si-nb6" firstAttribute="top" secondItem="bek-ux-cHr" secondAttribute="bottom" constant="20" id="i0a-zW-gkx"/>
+                            <constraint firstItem="nCQ-si-nb6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="100" id="jg4-LA-znl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nCQ-si-nb6" secondAttribute="trailing" constant="100" id="ksT-bH-yQO"/>
+                            <constraint firstItem="nCQ-si-nb6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t6y-51-5oj"/>
+                            <constraint firstItem="kR8-Bo-fVf" firstAttribute="top" secondItem="nE8-bO-fgX" secondAttribute="bottom" constant="20" id="uJX-9g-Fbd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nE8-bO-fgX" secondAttribute="trailing" constant="100" id="uSM-jy-WC6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="nCQ-si-nb6" id="r1x-V5-B2a"/>
+                        <outlet property="passwordTextField" destination="nE8-bO-fgX" id="H6a-pR-guh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
