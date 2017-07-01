@@ -33,10 +33,25 @@ class ViewController: UIViewController {
             
             if (error != nil ) {
             print("Hey we have an error")
+            Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user, error) in
+                print("We try to create user")
+                if (error != nil)
+                {
+                print("we have error ")
+                self.performSegue(withIdentifier: "signInSegue", sender: nil)
+                }
+                else
+                {
+                print("User created")
+                }
+            })
+                
             }
                 else
                 {
                     print("Signed In")
+                    
+                    self.performSegue(withIdentifier: "signInSegue", sender: nil)
             }
             
         })

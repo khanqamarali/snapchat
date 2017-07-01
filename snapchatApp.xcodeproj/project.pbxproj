@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B341AEFC1F08607300284588 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B341AEFB1F08607300284588 /* SnapsViewController.swift */; };
 		B37213CB1EFAD8E300796788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37213CA1EFAD8E300796788 /* AppDelegate.swift */; };
 		B37213CD1EFAD8E300796788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37213CC1EFAD8E300796788 /* ViewController.swift */; };
 		B37213D01EFAD8E300796788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37213CE1EFAD8E300796788 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		001B917736E501334D5D13D7 /* Pods_snapchatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_snapchatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B341AEFB1F08607300284588 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		B37213C71EFAD8E300796788 /* snapchatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapchatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37213CA1EFAD8E300796788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37213CC1EFAD8E300796788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				B37213CA1EFAD8E300796788 /* AppDelegate.swift */,
 				B37213CC1EFAD8E300796788 /* ViewController.swift */,
+				B341AEFB1F08607300284588 /* SnapsViewController.swift */,
 				B37213CE1EFAD8E300796788 /* Main.storyboard */,
 				B37213D41EFAD8E300796788 /* Assets.xcassets */,
 				B37213D61EFAD8E300796788 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B341AEFC1F08607300284588 /* SnapsViewController.swift in Sources */,
 				B37213CD1EFAD8E300796788 /* ViewController.swift in Sources */,
 				B37213D31EFAD8E300796788 /* snapchatApp.xcdatamodeld in Sources */,
 				B37213CB1EFAD8E300796788 /* AppDelegate.swift in Sources */,
