@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Allow Photo library access. </string>
 	<key>NSCameraUsageDescription</key>
 	<string>Allow snapchat to access your camera </string>
 	<key>CFBundleExecutable</key>
