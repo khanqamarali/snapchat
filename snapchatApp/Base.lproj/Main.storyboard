@@ -110,7 +110,7 @@
             </objects>
             <point key="canvasLocation" x="1860" y="88.605697151424295"/>
         </scene>
-        <!--Title-->
+        <!--Picture View Controller-->
         <scene sceneID="Igk-Ue-gMi">
             <objects>
                 <viewController id="aoB-D5-5r1" customClass="pictureViewController" customModule="snapchatApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +155,9 @@
                             <constraint firstItem="hot-Pp-h2P" firstAttribute="leading" secondItem="efl-LM-Xw1" secondAttribute="leadingMargin" constant="42" id="r1q-KC-a3X"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="pYD-ka-TzP"/>
+                    <navigationItem key="navigationItem" id="pYD-ka-TzP">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="eyk-Lb-GIG"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="descText" destination="vaw-dR-4ZO" id="j3O-ci-dOT"/>
                         <outlet property="displayImage" destination="hot-Pp-h2P" id="FF8-mU-bkD"/>
