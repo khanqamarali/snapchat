@@ -99,11 +99,35 @@
                                 <action selector="logoutTapped:" destination="Ifv-fN-qSH" id="bY3-d4-fh6"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pf2-iK-8Yb">
+                            <connections>
+                                <segue destination="aoB-D5-5r1" kind="show" id="1F9-0b-Oql"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A3k-Mq-9Hp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1860" y="88.605697151424295"/>
+        </scene>
+        <!--Picture View Controller-->
+        <scene sceneID="Igk-Ue-gMi">
+            <objects>
+                <viewController id="aoB-D5-5r1" customClass="pictureViewController" customModule="snapchatApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ps8-LR-5Ki"/>
+                        <viewControllerLayoutGuide type="bottom" id="tN7-Ig-hwu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efl-LM-Xw1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gxu-NW-oTD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vM5-b0-4VK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2751" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="N33-bJ-7nl">
