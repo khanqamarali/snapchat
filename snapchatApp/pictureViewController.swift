@@ -10,6 +10,8 @@ import UIKit
 
 class pictureViewController: UIViewController {
 
+    @IBOutlet weak var descText: UITextField!
+    @IBOutlet weak var displayImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,5 +19,10 @@ class pictureViewController: UIViewController {
     }
 
     
+    @IBAction func nextTapped(_ sender: Any) {
+       
+        print("I am tapped")
+        
+    }
 
 }
