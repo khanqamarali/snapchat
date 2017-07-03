@@ -18,6 +18,9 @@ class pictureViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func cameraButtonTapped(_ sender: Any) {
+         print("I am camera")
+    }
     
     @IBAction func nextTapped(_ sender: Any) {
        

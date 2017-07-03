@@ -156,7 +156,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="pYD-ka-TzP">
-                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="eyk-Lb-GIG"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="eyk-Lb-GIG">
+                            <connections>
+                                <action selector="cameraButtonTapped:" destination="aoB-D5-5r1" id="frZ-DP-jgj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="descText" destination="vaw-dR-4ZO" id="j3O-ci-dOT"/>
