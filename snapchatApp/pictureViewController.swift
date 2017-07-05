@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class pictureViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
@@ -31,6 +32,7 @@ class pictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
         
     }
     
+    @IBOutlet weak var nextButton: UIButton!
     
     
     @IBAction func cameraButtonTapped(_ sender: Any) {
@@ -41,9 +43,32 @@ class pictureViewController: UIViewController,UIImagePickerControllerDelegate,UI
     }
     
     @IBAction func nextTapped(_ sender: Any) {
+      
+      nextButton.isEnabled = false
+        let imagefolder =  Storage.storage().reference().child("images")
+        let imageData = UIImageJPEGRepresentation(displayImage.image!, 0.1)!
+        
+        imagefolder.child("\(NSUUID().uuidString).jpg").putData(imageData, metadata: nil, completion: {(metadata,error) in
+            print("We try to upload image")
+            if (error != nil)
+            {
+                
+                print("error has occured")
+            }
+            else
+            {
+            
+            self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
+            }
+        })
+        
+        
        
-        print("I am tapped")
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      
+    }
+    
 
 }
